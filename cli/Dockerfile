@@ -1,4 +1,5 @@
-FROM kanapi-bbs:ci
+FROM kanapi/kanapi-bbs
 MAINTAINER Jacek Danecki <jacek.m.danecki@gmail.com>
-RUN /configure; cd /kanapi_build/kanapi/kanapi_system/x86_64 && ./install cli verbose
+RUN /configure ; cd /kanapi_build/kanapi/kanapi_system/x86_64 && ./install cli verbose
 CMD ["/bin/bash"]
+

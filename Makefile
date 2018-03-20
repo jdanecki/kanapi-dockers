@@ -1,4 +1,4 @@
-all: sbs_build bbs_build cli_build
+all: sbs_build bbs_build
 
 sbs_build:
 	@if [ "$${TRAVIS}" = "true" ] ; then echo "travis_fold:start:sbs" ; fi
