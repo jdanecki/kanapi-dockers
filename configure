@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -x
+
+docker ps -a
+docker images
+git clone https://github.com/jdanecki/kanapi.git bbs/kanapi
+git clone bbs/kanapi cli/kanapi

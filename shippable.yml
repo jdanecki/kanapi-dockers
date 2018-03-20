@@ -1,0 +1,8 @@
+language: c
+compiler:
+  - gcc
+build:
+    ci:
+        - ./configure
+        - make
+        - make test
