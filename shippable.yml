@@ -6,6 +6,5 @@ build:
         - ./configure
         - make sbs_build
         - make bbs_build
-        - make cli_build
         - make test
 
