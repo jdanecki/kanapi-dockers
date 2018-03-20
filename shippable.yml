@@ -4,5 +4,5 @@ compiler:
 build:
     ci:
         - ./configure
-        - make
+        - make sbs_build
         - make test
