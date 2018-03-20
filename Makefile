@@ -1,4 +1,4 @@
-all: sbs_build
+all: sbs_build bbs_build cli_build
 
 sbs_build:
 	@if [ "$${TRAVIS}" = "true" ] ; then echo "travis_fold:start:sbs" ; fi
@@ -20,4 +20,3 @@ test:
 	docker ps -a
 	docker images
 	@if [ "$${TRAVIS}" = "true" ] ; then echo "travis_fold:end:testing" ; fi
-
