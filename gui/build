@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "${SHIPPABLE}" = "true" -o  "${TRAVIS}" = "true" ]
+then
+	docker build -m 4g -f Dockerfile-travis -t kanapi-gui:ci .
+else
+	docker build -m 4g -t kanapi-gui:ci .
+fi
+
