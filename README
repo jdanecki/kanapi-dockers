@@ -1,0 +1,61 @@
+KaNaPi-dockers repository 
+=========================
+
+This repository is part of KaNaPi project
+
+KaNaPi project
+==============
+
+Main goal of this project is to create educational operating system based on Linux kernel
+and free software for use at home.
+
+Current phase: Beta
+
+Versions: 
+* in development - v0.9
+* released - v0.8
+
+License: GPL v.3
+
+Look into doc directory to learn how to build KaNaPi.
+More details on http://kanapi.ga
+
+Author: jacek.m.danecki@gmail.com
+
+Images built in CI
+====================
+
+1. Docker images
+* SBS image - https://hub.docker.com/r/kanapi/kanapi-sbs
+* BBS image - https://hub.docker.com/r/kanapi/kanapi-bbs
+* CLI image - https://hub.docker.com/r/kanapi/kanapi-cli
+* X11 image - https://hub.docker.com/r/kanapi/kanapi-x11
+
+2. Image description
+2.1 Sbs - small build system: kanapi_system/kanapi-sbs
+2.2 Bbs - base build system, built on top of Sbs: kanapi_system/kanapi-bbs
+2.3 Cli - command line tools built on top of Bbs: kanapi_system/kanapi-cli
+2.4 X11 - X11 support, libs, apps, built on top of Cli: kanapi_system/kanapi-x11
+2.5 Gui - Gtk2/3 and Qt support, libs built on top of X11: kanapi_system/kanapi-gui
+2.6 Apps - Applications and libs built on top Gui: kanapi_system/kanapi-apps
+
+3. CI systems
+3.1 Builds in docker container
+* Shippable 
+  - build cli docker image from BBS docker image from https://hub.docker.com/r/kanapi/kanapi-bbs
+  - docker builds: https://app.shippable.com/github/jdanecki/kanapi-dockers/dashboard
+* Travis 
+  - build SBS from sbs-docker tarball and BBS from SBS docker image, https://travis-ci.org/jdanecki/kanapi
+  - docker builds: https://travis-ci.org/jdanecki/kanapi-dockers/builds/355665885
+* SemaphoreCI
+  - build cli docker image from BBS docker image from https://hub.docker.com/r/kanapi/kanapi-bbs
+  - build X11 docker image from cli docker image from https://hub.docker.com/r/kanapi/kanapi-cli
+  - docker builds: https://semaphoreci.com/jdanecki/kanapi-dockers/
+
+4. Repositories
+* Main KaNaPi repository: https://github.com/jdanecki/kanapi
+* KaNaPi CI tests: https://github.com/jdanecki/kanapi-ci
+* CI tests: https://github.com/jdanecki/ci-tests
+* KaNaPi CI tests on shippable only: https://github.com/jdanecki/kanapi-shippable
+* KaNaPi docker tests: https://github.com/jdanecki/kanapi-dockers
+
