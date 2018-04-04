@@ -1,4 +1,4 @@
-FROM kanapi-sbs:ci
+FROM kanapi/kanapi-sbs
 MAINTAINER Jacek Danecki <jacek.m.danecki@gmail.com>
 RUN mkdir /kanapi_build/kanapi
 COPY kanapi /kanapi_build/kanapi
