@@ -17,6 +17,11 @@ cli_build:
 	cd cli; ./build ; if [ "$$?" = "0" ] ; then cd .. ; else false; fi
 	@if [ "$${TRAVIS}" = "true" ] ; then echo "travis_fold:end:cli" ; fi
 
+cli_base_build:
+	@if [ "$${TRAVIS}" = "true" ] ; then echo "travis_fold:start:cli" ; fi
+	cd cli-base; ./build ; if [ "$$?" = "0" ] ; then cd .. ; else false; fi
+	@if [ "$${TRAVIS}" = "true" ] ; then echo "travis_fold:end:cli" ; fi
+
 x11_build:
 	@if [ "$${TRAVIS}" = "true" ] ; then echo "travis_fold:start:x11" ; fi
 	cd x11; ./build ; if [ "$$?" = "0" ] ; then cd .. ; else false; fi

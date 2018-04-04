@@ -5,5 +5,5 @@ build:
     ci:
         - ./configure
         - make sbs_build
-        - make cli_build
+        - make cli_base_build
         - make test
