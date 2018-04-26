@@ -26,10 +26,10 @@ Images built in CI
 ====================
 
 1. Docker images
-* SBS image  - https://hub.docker.com/r/kanapi/kanapi-sbs  tag:3
-* BBS image  - https://hub.docker.com/r/kanapi/kanapi-bbs  tag:6
-* CLI image  - https://hub.docker.com/r/kanapi/kanapi-cli  tag:9
-* X11 image  - https://hub.docker.com/r/kanapi/kanapi-x11  tag:3
+* SBS image  - https://hub.docker.com/r/kanapi/kanapi-sbs  tag:4
+* BBS image  - https://hub.docker.com/r/kanapi/kanapi-bbs  tag:7
+* CLI image  - https://hub.docker.com/r/kanapi/kanapi-cli  tag:10
+* X11 image  - https://hub.docker.com/r/kanapi/kanapi-x11  tag:4
 * GUI image  - https://hub.docker.com/r/kanapi/kanapi-gui  tag:3
 * APPS image - https://hub.docker.com/r/kanapi/kanapi-apps tag:3
 
