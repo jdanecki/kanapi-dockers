@@ -1,10 +1,8 @@
-KaNaPi-dockers repository 
-=========================
+# KaNaPi-dockers repository 
 
 This repository is part of KaNaPi project
 
-KaNaPi project
-==============
+# KaNaPi project
 
 Main goal of this project is to create educational operating system based on Linux kernel
 and free software for use at home.
@@ -22,27 +20,37 @@ More details on http://kanapi.ga
 
 Author: jacek.m.danecki@gmail.com
 
-Images built in CI
-====================
+## Docker images
 
-1. Docker images
 * SBS image  - https://hub.docker.com/r/kanapi/kanapi-sbs  tag:4
-* BBS image  - https://hub.docker.com/r/kanapi/kanapi-bbs  tag:7
-* CLI image  - https://hub.docker.com/r/kanapi/kanapi-cli  tag:10
-* X11 image  - https://hub.docker.com/r/kanapi/kanapi-x11  tag:4
-* GUI image  - https://hub.docker.com/r/kanapi/kanapi-gui  tag:3
-* APPS image - https://hub.docker.com/r/kanapi/kanapi-apps tag:3
+* BBS image  - https://hub.docker.com/r/kanapi/kanapi-bbs  tag:8
+* CLI image  - https://hub.docker.com/r/kanapi/kanapi-cli  tag:11
+* X11 image  - https://hub.docker.com/r/kanapi/kanapi-x11  tag:5
+* GUI image  - https://hub.docker.com/r/kanapi/kanapi-gui  tag:4
+* APPS image - https://hub.docker.com/r/kanapi/kanapi-apps tag:6
 
-2. Image description
-2.1 Sbs - small build system: kanapi_system/kanapi-sbs
-2.2 Bbs - base build system, built on top of Sbs: kanapi_system/kanapi-bbs
-2.3 Cli - command line tools built on top of Bbs: kanapi_system/kanapi-cli
-2.4 X11 - X11 support, libs, apps, built on top of Cli: kanapi_system/kanapi-x11
-2.5 Gui - Gtk2/3 and Qt support, libs built on top of X11: kanapi_system/kanapi-gui
-2.6 Apps - Applications and libs built on top Gui: kanapi_system/kanapi-apps
+## Docker images for CI
 
-3. CI systems
-3.1 Builds in docker container
+* cli-lib:5
+* x11-lib:6
+* apps-x11:2
+* gtk:5
+* qt:5
+* apps-gtk:3
+* apps-qt:3
+* apps-gui:2
+
+## Image description
+
+* Sbs - small build system: kanapi_system/kanapi-sbs
+* Bbs - base build system, built on top of Sbs: kanapi_system/kanapi-bbs
+* Cli - command line tools built on top of Bbs: kanapi_system/kanapi-cli
+* X11 - X11 support, libs, apps, built on top of Cli: kanapi_system/kanapi-x11
+* Gui - Gtk2/3 and Qt support, libs built on top of X11: kanapi_system/kanapi-gui
+* Apps - Applications and libs built on top Gui: kanapi_system/kanapi-apps
+
+## CI systems using docker containers
+
 * Shippable 
   - build cli docker image from BBS docker image from https://hub.docker.com/r/kanapi/kanapi-bbs
   - docker builds: https://app.shippable.com/github/jdanecki/kanapi-dockers/dashboard
@@ -54,7 +62,8 @@ Images built in CI
   - build X11 docker image from cli docker image from https://hub.docker.com/r/kanapi/kanapi-cli
   - docker builds: https://semaphoreci.com/jdanecki/kanapi-dockers/
 
-4. Repositories
+## Repositories
+
 * Main KaNaPi repository: https://github.com/jdanecki/kanapi
 * KaNaPi CI tests: https://github.com/jdanecki/kanapi-ci
 * CI tests: https://github.com/jdanecki/ci-tests
