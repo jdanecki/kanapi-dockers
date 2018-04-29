@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -f Dockerfile-wx -m 4g -t kanapi-wx:ci .
+
