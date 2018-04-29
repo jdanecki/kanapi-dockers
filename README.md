@@ -26,7 +26,7 @@ Author: jacek.m.danecki@gmail.com
 * BBS image  - https://hub.docker.com/r/kanapi/kanapi-bbs  tag:8
 * CLI image  - https://hub.docker.com/r/kanapi/kanapi-cli  tag:11
 * X11 image  - https://hub.docker.com/r/kanapi/kanapi-x11  tag:5
-* GUI image  - https://hub.docker.com/r/kanapi/kanapi-gui  tag:4
+* GUI image  - https://hub.docker.com/r/kanapi/kanapi-gui  tag:5
 * APPS image - https://hub.docker.com/r/kanapi/kanapi-apps tag:6
 
 ## Docker images for CI
@@ -38,7 +38,7 @@ Author: jacek.m.danecki@gmail.com
 * qt:5
 * apps-gtk:3
 * apps-qt:3
-* apps-gui:2
+* apps-gui:4
 
 ## Image description
 
